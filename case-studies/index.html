@@ -1,0 +1,355 @@
+
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Case Studies | Wasl Agency</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind Config Verbatim -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-low": "#011d34",
+                    "surface-bright": "#233b53",
+                    "on-error": "#690005",
+                    "on-secondary": "#3e2e06",
+                    "inverse-surface": "#d0e4ff",
+                    "inverse-on-surface": "#19324a",
+                    "on-tertiary": "#31312c",
+                    "surface-container-high": "#122c43",
+                    "primary-container": "#011e3a",
+                    "background": "#001427",
+                    "on-tertiary-container": "#86857f",
+                    "on-primary": "#18314e",
+                    "surface": "#001427",
+                    "on-primary-fixed": "#001c38",
+                    "surface-container-lowest": "#000f1f",
+                    "primary-fixed": "#d3e4ff",
+                    "error": "#ffb4ab",
+                    "secondary-fixed": "#fbdfa8",
+                    "tertiary-fixed-dim": "#c9c6c0",
+                    "on-secondary-container": "#cfb681",
+                    "primary": "#b0c8ec",
+                    "tertiary": "#c9c6c0",
+                    "secondary-container": "#59471d",
+                    "outline-variant": "#43474d",
+                    "surface-container-highest": "#1e364f",
+                    "surface-container": "#052138",
+                    "on-secondary-fixed": "#251a00",
+                    "on-primary-container": "#6f87a8",
+                    "on-background": "#d0e4ff",
+                    "on-tertiary-fixed-variant": "#474742",
+                    "on-tertiary-fixed": "#1c1c18",
+                    "primary-fixed-dim": "#b0c8ec",
+                    "on-secondary-fixed-variant": "#56441b",
+                    "on-primary-fixed-variant": "#304866",
+                    "error-container": "#93000a",
+                    "surface-tint": "#b0c8ec",
+                    "secondary-fixed-dim": "#dec48e",
+                    "on-error-container": "#ffdad6",
+                    "outline": "#8e9198",
+                    "tertiary-fixed": "#e5e2db",
+                    "inverse-primary": "#48607f",
+                    "tertiary-container": "#1d1d19",
+                    "on-surface": "#d0e4ff",
+                    "surface-dim": "#001427",
+                    "surface-variant": "#1e364f",
+                    "secondary": "#dec48e",
+                    "on-surface-variant": "#c4c6ce"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "margin-mobile": "24px",
+                    "gutter": "24px",
+                    "stack-lg": "32px",
+                    "section-gap": "120px",
+                    "margin-desktop": "80px",
+                    "stack-sm": "8px",
+                    "stack-md": "16px"
+            },
+            "fontFamily": {
+                    "label-md": ["Manrope"],
+                    "body-md": ["Manrope"],
+                    "headline-display": ["Playfair Display"],
+                    "body-lg": ["Manrope"],
+                    "headline-md": ["Playfair Display"],
+                    "headline-lg-mobile": ["Playfair Display"],
+                    "headline-lg": ["Playfair Display"]
+            },
+            "fontSize": {
+                    "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-display": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .glass-effect {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .text-glow {
+            text-shadow: 0 0 15px rgba(222, 196, 142, 0.3);
+        }
+        .architectural-border {
+            border: 1px solid rgba(222, 196, 142, 0.1);
+        }
+        .architectural-border:hover {
+            border: 1px solid rgba(222, 196, 142, 0.4);
+        }
+        section {
+            scroll-margin-top: 100px;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-secondary selection:text-on-secondary overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full flex justify-between items-center px-margin-mobile md:px-margin-desktop py-6 max-w-7xl mx-auto z-50 bg-surface/80 backdrop-blur-md border-b border-white/10">
+<div class="font-headline-md text-headline-md text-on-surface dark:text-on-surface">Wasl Agency</div>
+<div class="hidden md:flex gap-stack-lg items-center">
+<a class="font-headline-md text-[14px] uppercase tracking-widest text-on-surface/70 hover:text-secondary transition-colors duration-300" href="#">Solutions</a>
+<a class="font-headline-md text-[14px] uppercase tracking-widest text-secondary border-b border-secondary pb-1 active:scale-95 duration-200 transition-transform" href="#">Case Studies</a>
+</div>
+<button class="bg-secondary text-on-secondary px-6 py-2 uppercase font-label-md text-label-md hover:bg-secondary-fixed-dim transition-all active:scale-95">Book a Call</button>
+</nav>
+<main class="pt-[100px]">
+<!-- Hero Section -->
+<section class="min-h-[614px] flex flex-col justify-center px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto py-section-gap">
+<div class="max-w-4xl space-y-stack-md">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-[0.3em]">Evidence of Excellence</span>
+<h1 class="font-headline-display text-headline-display md:text-[80px] text-on-surface leading-none">
+                    Measurable Outcomes.<br/>Real-World Impact.
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mt-stack-lg">
+                    Explore how Wasl Agency transforms operations for real estate leaders and SMEs through intelligent AI automation.
+                </p>
+</div>
+</section>
+<!-- Category Filter -->
+<section class="px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto mb-stack-lg">
+<div class="flex flex-wrap gap-stack-md pb-stack-md border-b border-white/5">
+<button class="px-6 py-2 rounded-full border border-secondary text-secondary font-label-md text-label-md transition-all hover:bg-secondary hover:text-on-secondary">All Projects</button>
+<button class="px-6 py-2 rounded-full border border-white/10 text-on-surface-variant font-label-md text-label-md transition-all hover:border-secondary hover:text-secondary">Real Estate</button>
+<button class="px-6 py-2 rounded-full border border-white/10 text-on-surface-variant font-label-md text-label-md transition-all hover:border-secondary hover:text-secondary">Service Businesses</button>
+<button class="px-6 py-2 rounded-full border border-white/10 text-on-surface-variant font-label-md text-label-md transition-all hover:border-secondary hover:text-secondary">Custom Workflows</button>
+</div>
+</section>
+<!-- Case Study Grid -->
+<section class="px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto py-stack-lg grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Case Study 1 -->
+<article class="bg-surface-container-low p-stack-md architectural-border group cursor-pointer transition-all duration-500 flex flex-col justify-between min-h-[500px]">
+<div>
+<div class="aspect-square bg-surface-container-high overflow-hidden relative mb-stack-md">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-110 group-hover:scale-100" data-alt="A luxurious, modern high-rise glass building reflecting a deep navy blue twilight sky. The architecture is sharp and sleek, with golden interior lights glowing through the windows. The image has a sophisticated, premium aesthetic with deep contrasts and a cinematic mood, capturing architectural perfection." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKePoAwDGk21_dlK-T3k6zzpznJzfaNzZpxcvXV_aWTUtHlPoSsv1igmxsEqfE9LHgRobipUNyhLx1UBC2hJqX5-afTLTeqLQhCGCx005l8PjESjnBR2GBtbr77aEJKbp2eQNlBhYyTqYiieqOlIwAVNZV_2QlfxEa35dZfZ3rruTsxtbKRNwHz-OH6ovQap9aFRZ5YdjYu7qWZZbWxHuA77MUf1oAv7_tdevjLEkkuOWC361zmCBvoivwGqys1350Rp0l0rNO6z8"/>
+<div class="absolute top-4 left-4 bg-secondary/90 text-on-secondary px-3 py-1 font-label-md text-[10px] uppercase tracking-widest">Real Estate</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-stack-sm">Vanguard Realty</h3>
+<p class="font-label-md text-label-md text-secondary mb-stack-md">24/7 AI Voice Concierge</p>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3">How we eliminated missed after-hours calls with a custom AI voice assistant that handles inquiries with human-like precision.</p>
+</div>
+<div class="mt-stack-lg border-t border-white/5 pt-stack-md flex justify-between">
+<div>
+<div class="font-headline-md text-[24px] text-secondary">95%</div>
+<div class="font-label-md text-[10px] uppercase text-on-surface-variant">Inquiry Capture</div>
+</div>
+<div class="text-right">
+<div class="font-headline-md text-[24px] text-secondary">4x</div>
+<div class="font-label-md text-[10px] uppercase text-on-surface-variant">Appt Rate</div>
+</div>
+</div>
+</article>
+<!-- Case Study 2 -->
+<article class="bg-surface-container-low p-stack-md architectural-border group cursor-pointer transition-all duration-500 flex flex-col justify-between min-h-[500px]">
+<div>
+<div class="aspect-square bg-surface-container-high overflow-hidden relative mb-stack-md">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-110 group-hover:scale-100" data-alt="A high-tech digital interface overlaying a minimalist logistics office. Abstract data visualizations in muted gold and ivory flow across a deep navy background. The setting is clean, professional, and reflects high-efficiency automation and complex systems design within a modern corporate environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8ByRK7rpcQ4PeFDyih8pcgq9L6QpwE5U1ZJMQ1_RJL8i4b_0iPyt3vhQS8tMoRV7zvBzScAF16KfHlS5tEyL7P7L5Fci8qRxzxfKeaiQJFtX7rfJALDcbj0SGg33Ld3bgES9jZ4gXUxpbj-tLMiWt-3pfe13r6-csPMD6YatXunbviT3jhgNFRrA28QW9wXZtu7aSDib2ZJdDAZDfkzJxRo_6iWbt2Jg35kLZpWWIzh-G_OdQR3PU7kzmCD0EH1GmNs7-NycIhfU"/>
+<div class="absolute top-4 left-4 bg-secondary/90 text-on-secondary px-3 py-1 font-label-md text-[10px] uppercase tracking-widest">SME</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-stack-sm">FlowFlow Logistics</h3>
+<p class="font-label-md text-label-md text-secondary mb-stack-md">Workflow Overhaul</p>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3">Automating complex multi-channel lead routing and CRM synchronization to eliminate manual data entry bottlenecks.</p>
+</div>
+<div class="mt-stack-lg border-t border-white/5 pt-stack-md flex justify-between">
+<div>
+<div class="font-headline-md text-[24px] text-secondary">60%</div>
+<div class="font-label-md text-[10px] uppercase text-on-surface-variant">Efficiency Gain</div>
+</div>
+<div class="text-right">
+<div class="font-headline-md text-[24px] text-secondary">$12k</div>
+<div class="font-label-md text-[10px] uppercase text-on-surface-variant">Monthly Savings</div>
+</div>
+</div>
+</article>
+<!-- Case Study 3 -->
+<article class="bg-surface-container-low p-stack-md architectural-border group cursor-pointer transition-all duration-500 flex flex-col justify-between min-h-[500px]">
+<div>
+<div class="aspect-square bg-surface-container-high overflow-hidden relative mb-stack-md">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-110 group-hover:scale-100" data-alt="A wide angle shot of a luxury penthouse interior with floor-to-ceiling windows looking out over a city at night. The lighting is low and elegant, highlighting deep navy velvet textures and gold accents. The atmosphere is one of exclusive real estate brokerage and high-stakes professionalism." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWnH378tvwewreyzd6z4ukcY7P2nCxMaD3-kkgSKuzjduo09dkbkuIc9b0oLuiR_T1xdaxhrNsZ8xxkk1UxTRe-kwJRu22-INfZ8DGgvtzgu6Ugm32DnazYqzOFQNFrm12aUbpYeUZwnSqF1_aapTvPFmLwF4TJtK2BMuvPF4VSDqx-6Spwr44ajTQd0rNGkfisIRdtd5N9xPPzUI4PLCQ6DpxWMSIL0hvUPktJEhKEA9ZV68U-mZ3FPmGvFRXbGRWXLEZqOdUFrw"/>
+<div class="absolute top-4 left-4 bg-secondary/90 text-on-secondary px-3 py-1 font-label-md text-[10px] uppercase tracking-widest">Real Estate Broker</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-stack-sm">Elite Estates</h3>
+<p class="font-label-md text-label-md text-secondary mb-stack-md">Lead Qualification</p>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3">Implementing a smart chat system that qualifies buyers and books viewings instantly, filtering for high-intent prospects.</p>
+</div>
+<div class="mt-stack-lg border-t border-white/5 pt-stack-md flex justify-between">
+<div>
+<div class="font-headline-md text-[24px] text-secondary">85%</div>
+<div class="font-label-md text-[10px] uppercase text-on-surface-variant">Faster Response</div>
+</div>
+<div class="text-right">
+<div class="font-headline-md text-[24px] text-secondary">3.5x</div>
+<div class="font-label-md text-[10px] uppercase text-on-surface-variant">ROI</div>
+</div>
+</div>
+</article>
+</section>
+<!-- ROI Spotlight -->
+<section class="bg-surface-container-lowest py-section-gap border-y border-white/5 my-section-gap">
+<div class="px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto flex flex-col lg:flex-row gap-stack-lg items-center">
+<div class="lg:w-1/2 space-y-stack-md">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-[0.3em]">The Aggregate Advantage</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Precision-Engineered Growth for our Partners.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Beyond individual success, our ecosystem of AI solutions drives consistent, compounding value across diverse industries.</p>
+</div>
+<div class="lg:w-1/2 grid grid-cols-2 gap-gutter w-full">
+<div class="p-stack-lg architectural-border text-center flex flex-col items-center">
+<span class="material-symbols-outlined text-[48px] text-secondary mb-stack-sm" style="font-variation-settings: 'FILL' 0;">database</span>
+<div class="font-headline-display text-[48px] text-on-surface">1M+</div>
+<div class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest">Leads Processed</div>
+</div>
+<div class="p-stack-lg architectural-border text-center flex flex-col items-center">
+<span class="material-symbols-outlined text-[48px] text-secondary mb-stack-sm" style="font-variation-settings: 'FILL' 0;">schedule</span>
+<div class="font-headline-display text-[48px] text-on-surface">50k+</div>
+<div class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest">Hours Saved</div>
+</div>
+<div class="p-stack-lg architectural-border text-center flex flex-col items-center">
+<span class="material-symbols-outlined text-[48px] text-secondary mb-stack-sm" style="font-variation-settings: 'FILL' 0;">query_stats</span>
+<div class="font-headline-display text-[48px] text-on-surface">240%</div>
+<div class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest">Avg ROI</div>
+</div>
+<div class="p-stack-lg architectural-border text-center flex flex-col items-center">
+<span class="material-symbols-outlined text-[48px] text-secondary mb-stack-sm" style="font-variation-settings: 'FILL' 0;">apartment</span>
+<div class="font-headline-display text-[48px] text-on-surface">150+</div>
+<div class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest">Client Deployments</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Detailed Deep Dive: The Transformation -->
+<section class="px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto py-section-gap">
+<div class="flex flex-col lg:flex-row gap-stack-lg items-center">
+<div class="lg:w-1/2 order-2 lg:order-1">
+<div class="p-1 bg-gradient-to-br from-secondary/30 to-transparent">
+<div class="bg-surface-container-low p-stack-lg space-y-stack-md">
+<h3 class="font-headline-md text-headline-md text-secondary">The "Before" Bottleneck</h3>
+<ul class="space-y-stack-sm text-on-surface-variant font-body-md">
+<li class="flex gap-4"><span class="text-error">✕</span> 40% of leads lost outside business hours.</li>
+<li class="flex gap-4"><span class="text-error">✕</span> Sales reps spending 15 hrs/week on data entry.</li>
+<li class="flex gap-4"><span class="text-error">✕</span> Inconsistent lead qualification.</li>
+</ul>
+<div class="h-[1px] bg-white/5 my-stack-md"></div>
+<h3 class="font-headline-md text-headline-md text-primary">The AI "After"</h3>
+<ul class="space-y-stack-sm text-on-surface-variant font-body-md">
+<li class="flex gap-4"><span class="text-secondary">✓</span> Instant response times 24/7.</li>
+<li class="flex gap-4"><span class="text-secondary">✓</span> Fully automated CRM syncing.</li>
+<li class="flex gap-4"><span class="text-secondary">✓</span> Qualified viewings booked on autopilot.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="lg:w-1/2 order-1 lg:order-2 space-y-stack-md">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-[0.3em]">Operational Comparison</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">A Blueprint for Scalability.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">We don't just plug in tools; we architect the underlying workflows that allow your business to breathe and your team to focus on high-value closing.</p>
+</div>
+</div>
+</section>
+<!-- Testimonial -->
+<section class="px-margin-mobile md:px-margin-desktop max-w-5xl mx-auto py-section-gap text-center">
+<span class="material-symbols-outlined text-[64px] text-secondary/30 mb-stack-md" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+<blockquote class="font-headline-md text-[36px] italic text-on-surface leading-relaxed mb-stack-lg">
+                "Wasl Agency didn't just automate our emails; they reinvented our entire sales funnel. Our appointment rate quadrupled within the first month. It's the highest ROI decision we've made this year."
+            </blockquote>
+<div class="space-y-1">
+<div class="font-label-md text-label-md text-on-surface uppercase tracking-widest">Jameson Thorne</div>
+<div class="font-body-md text-body-md text-on-surface-variant">CEO, Vanguard Global Realty</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto py-section-gap mb-section-gap relative overflow-hidden">
+<div class="absolute inset-0 bg-secondary opacity-[0.03] rounded-xl"></div>
+<div class="relative z-10 p-stack-lg md:p-section-gap text-center flex flex-col items-center">
+<h2 class="font-headline-display text-headline-display md:text-[64px] text-on-surface mb-stack-md">Ready for your own success story?</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-stack-lg">Join the ranks of high-performing firms leveraging architectural AI to dominate their markets.</p>
+<button class="bg-secondary text-on-secondary px-10 py-4 uppercase font-label-md text-[16px] tracking-widest hover:bg-secondary-fixed-dim transition-all active:scale-95">Book your free automation audit</button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-section-gap px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row justify-between items-center gap-stack-lg bg-surface-container-lowest border-t border-white/5">
+<div class="flex flex-col items-center md:items-start gap-stack-sm">
+<div class="font-headline-md text-headline-md text-on-surface">Wasl Agency</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs text-center md:text-left">Architectural AI Automation for the modern elite enterprise.</p>
+</div>
+<div class="flex flex-col items-center gap-stack-md">
+<div class="flex gap-stack-lg">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-opacity duration-200" href="#">Privacy Policy</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-opacity duration-200" href="#">Terms of Service</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-opacity duration-200" href="#">LinkedIn</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary transition-opacity duration-200" href="#">Contact</a>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">© 2024 Wasl Agency. Architectural AI Automation.</p>
+</div>
+</footer>
+<script>
+        // Atmospheric Micro-interactions
+        document.querySelectorAll('.architectural-border').forEach(card => {
+            card.addEventListener('mousemove', e => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                card.style.setProperty('--mouse-x', `${x}px`);
+                card.style.setProperty('--mouse-y', `${y}px`);
+                
+                // Subtle shine effect logic can be added here
+            });
+        });
+
+        // Simple scroll reveal
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section > div').forEach(el => {
+            el.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(el);
+        });
+    </script>
+</body></html>
