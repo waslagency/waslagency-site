@@ -1,0 +1,352 @@
+
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Process | Wasl Agency</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary": "#31312c",
+                    "surface-container-high": "#122c43",
+                    "outline": "#8e9198",
+                    "secondary-fixed": "#fbdfa8",
+                    "error": "#ffb4ab",
+                    "surface-tint": "#b0c8ec",
+                    "on-primary-fixed-variant": "#304866",
+                    "error-container": "#93000a",
+                    "on-primary": "#18314e",
+                    "surface-dim": "#001427",
+                    "tertiary-fixed": "#e5e2db",
+                    "secondary-container": "#59471d",
+                    "tertiary": "#c9c6c0",
+                    "surface-container-highest": "#1e364f",
+                    "tertiary-fixed-dim": "#c9c6c0",
+                    "on-tertiary-fixed": "#1c1c18",
+                    "on-primary-container": "#6f87a8",
+                    "on-background": "#d0e4ff",
+                    "primary-fixed": "#d3e4ff",
+                    "on-surface": "#d0e4ff",
+                    "background": "#001427",
+                    "secondary": "#dec48e",
+                    "surface-bright": "#233b53",
+                    "on-secondary-fixed-variant": "#56441b",
+                    "on-secondary-fixed": "#251a00",
+                    "on-error-container": "#ffdad6",
+                    "surface-container": "#052138",
+                    "on-secondary-container": "#cfb681",
+                    "inverse-primary": "#48607f",
+                    "surface-variant": "#1e364f",
+                    "secondary-fixed-dim": "#dec48e",
+                    "primary-fixed-dim": "#b0c8ec",
+                    "on-primary-fixed": "#001c38",
+                    "inverse-surface": "#d0e4ff",
+                    "surface-container-low": "#011d34",
+                    "primary-container": "#011e3a",
+                    "tertiary-container": "#1d1d19",
+                    "on-tertiary-fixed-variant": "#474742",
+                    "on-surface-variant": "#c4c6ce",
+                    "primary": "#b0c8ec",
+                    "on-tertiary-container": "#86857f",
+                    "surface": "#001427",
+                    "outline-variant": "#43474d",
+                    "on-secondary": "#3e2e06",
+                    "surface-container-lowest": "#000f1f",
+                    "on-error": "#690005",
+                    "inverse-on-surface": "#19324a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "stack-sm": "8px",
+                    "section-gap": "120px",
+                    "gutter": "24px",
+                    "stack-md": "16px",
+                    "stack-lg": "32px",
+                    "margin-desktop": "80px",
+                    "margin-mobile": "24px"
+            },
+            "fontFamily": {
+                    "headline-display": ["Playfair Display"],
+                    "body-md": ["Manrope"],
+                    "headline-md": ["Playfair Display"],
+                    "headline-lg-mobile": ["Playfair Display"],
+                    "label-md": ["Manrope"],
+                    "headline-lg": ["Playfair Display"],
+                    "body-lg": ["Manrope"]
+            },
+            "fontSize": {
+                    "headline-display": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #001427;
+            color: #d0e4ff;
+            font-family: 'Manrope', sans-serif;
+            overflow-x: hidden;
+        }
+        .architectural-line {
+            background: linear-gradient(90deg, transparent, rgba(222, 196, 142, 0.3), transparent);
+            height: 1px;
+            width: 100%;
+        }
+        .glass-card {
+            background: rgba(26, 51, 75, 0.4);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(222, 196, 142, 0.1);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .glass-card:hover {
+            border-color: rgba(222, 196, 142, 0.6);
+            transform: translateY(-4px);
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at top right, rgba(222, 196, 142, 0.05), transparent 60%);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="antialiased">
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 bg-surface/80 backdrop-blur-xl border-b border-secondary/10">
+<div class="font-headline-md text-headline-md text-secondary tracking-tight">Wasl Agency</div>
+<div class="hidden md:flex items-center gap-stack-lg">
+<a class="font-headline-md text-[18px] text-secondary border-b border-secondary pb-1" href="#">Process</a>
+<a class="font-headline-md text-[18px] text-on-surface hover:text-secondary-fixed-dim transition-colors duration-300" href="#">Solutions</a>
+<a class="font-headline-md text-[18px] text-on-surface hover:text-secondary-fixed-dim transition-colors duration-300" href="#">Case Studies</a>
+<a class="font-headline-md text-[18px] text-on-surface hover:text-secondary-fixed-dim transition-colors duration-300" href="#">About</a>
+<a class="font-headline-md text-[18px] text-on-surface hover:text-secondary-fixed-dim transition-colors duration-300" href="#">Insights</a>
+</div>
+<button class="bg-secondary text-primary-container px-6 py-3 rounded-full font-label-md hover:bg-secondary-fixed transition-all duration-300">
+            Book Strategy Call
+        </button>
+</nav>
+<main class="mt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[716px] flex flex-col justify-center px-margin-mobile md:px-margin-desktop hero-gradient overflow-hidden">
+<div class="max-w-4xl space-y-stack-md z-10">
+<div class="flex items-center gap-4 opacity-0 animate-[fadeIn_1s_ease-out_forwards]">
+<div class="h-[1px] w-12 bg-secondary"></div>
+<span class="font-label-md text-secondary uppercase tracking-[0.2em]">Our Methodology</span>
+</div>
+<h1 class="font-headline-display text-headline-lg-mobile md:text-headline-display text-on-surface">
+                    The Blueprint for <br/><span class="text-secondary italic">Intelligent Growth</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                    We deliver architectural precision to business automation. Our seamless 4-step implementation ensures your legacy systems evolve into high-performance AI ecosystems.
+                </p>
+</div>
+<!-- Abstract Architectural Graphic -->
+<div class="absolute right-0 top-1/2 -translate-y-1/2 w-1/3 h-full opacity-20 hidden lg:block">
+<div class="absolute inset-0 border-l border-secondary/20 transform rotate-12"></div>
+<div class="absolute inset-0 border-l border-secondary/20 transform -rotate-12 translate-x-20"></div>
+<div class="absolute bottom-1/4 right-0 w-64 h-64 border border-secondary/10 rounded-full"></div>
+</div>
+</section>
+<!-- Process Grid -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container-lowest">
+<div class="mb-20 text-center">
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Engineering Success</h2>
+<p class="font-body-md text-on-surface-variant mt-4">A rigorous framework designed for enterprise-grade scalability.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter relative">
+<!-- Connecting Line (Desktop) -->
+<div class="hidden lg:block absolute top-12 left-0 w-full architectural-line z-0"></div>
+<!-- Step 1 -->
+<div class="glass-card p-stack-lg flex flex-col gap-stack-md relative z-10">
+<div class="w-12 h-12 rounded-full border border-secondary flex items-center justify-center text-secondary font-headline-md bg-primary-container">
+                        01
+                    </div>
+<h3 class="font-headline-md text-[24px] text-on-surface mt-4">Workflow Audit</h3>
+<p class="font-body-md text-on-surface-variant">
+                        We map your current processes to identify bottlenecks and revenue leakage, providing a clear diagnostic of where AI can exert the most leverage.
+                    </p>
+<div class="mt-auto pt-6">
+<span class="material-symbols-outlined text-secondary" data-icon="troubleshoot">troubleshoot</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="glass-card p-stack-lg flex flex-col gap-stack-md relative z-10">
+<div class="w-12 h-12 rounded-full border border-secondary flex items-center justify-center text-secondary font-headline-md bg-primary-container">
+                        02
+                    </div>
+<h3 class="font-headline-md text-[24px] text-on-surface mt-4">Custom Build</h3>
+<p class="font-body-md text-on-surface-variant">
+                        We architect your bespoke AI automation system, voice assistants, and CRM integrations tailored to your specific organizational DNA.
+                    </p>
+<div class="mt-auto pt-6">
+<span class="material-symbols-outlined text-secondary" data-icon="architecture">architecture</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="glass-card p-stack-lg flex flex-col gap-stack-md relative z-10">
+<div class="w-12 h-12 rounded-full border border-secondary flex items-center justify-center text-secondary font-headline-md bg-primary-container">
+                        03
+                    </div>
+<h3 class="font-headline-md text-[24px] text-on-surface mt-4">Launch &amp; Integrate</h3>
+<p class="font-body-md text-on-surface-variant">
+                        We deploy the system into your business with zero downtime. Our experts provide hands-on team training to ensure seamless adoption.
+                    </p>
+<div class="mt-auto pt-6">
+<span class="material-symbols-outlined text-secondary" data-icon="rocket_launch">rocket_launch</span>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="glass-card p-stack-lg flex flex-col gap-stack-md relative z-10">
+<div class="w-12 h-12 rounded-full border border-secondary flex items-center justify-center text-secondary font-headline-md bg-primary-container">
+                        04
+                    </div>
+<h3 class="font-headline-md text-[24px] text-on-surface mt-4">Scale &amp; Optimize</h3>
+<p class="font-body-md text-on-surface-variant">
+                        Continuous monitoring and data-driven refinement. We fine-tune algorithms and workflows monthly to maximize your ongoing ROI.
+                    </p>
+<div class="mt-auto pt-6">
+<span class="material-symbols-outlined text-secondary" data-icon="query_stats">query_stats</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Visual Highlight Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop overflow-hidden">
+<div class="flex flex-col lg:flex-row items-center gap-20">
+<div class="w-full lg:w-1/2 space-y-stack-md">
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Precision in <span class="text-secondary">Every Byte.</span></h2>
+<p class="font-body-lg text-on-surface-variant">
+                        Unlike off-the-shelf software, Wasl Agency builds infrastructure that lives and breathes with your business. We don't just "install" tools; we engineer ecosystems.
+                    </p>
+<ul class="space-y-4 pt-6">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary mt-1" data-icon="check_circle">check_circle</span>
+<div>
+<h4 class="font-label-md text-on-surface">Neural Integration</h4>
+<p class="font-body-md text-on-surface-variant">Systems that communicate across every department.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary mt-1" data-icon="check_circle">check_circle</span>
+<div>
+<h4 class="font-label-md text-on-surface">Data Sovereignty</h4>
+<p class="font-body-md text-on-surface-variant">Your business data remains private, secure, and under your control.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="w-full lg:w-1/2 relative">
+<div class="aspect-square bg-surface-container-high rounded-lg overflow-hidden border border-secondary/10">
+<img class="w-full h-full object-cover grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-700" data-alt="A sophisticated macro photograph of high-end architectural model details, showing precise geometric structures and intersecting metallic lines. The lighting is dramatic and moody, utilizing deep shadows and soft highlights that emphasize a dark navy and muted gold color palette. The aesthetic is extremely minimalist and premium, representing the precision of AI engineering and structural growth." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQh80I2WTQF8i9bdSqAgKrjaSRkh7IYkCwnHQ7-W1HzexeWyypVZ0meH3r1v0dO9mO8hzXMbfhUr7IkdDKWaAX7TmdAXdvBLAXIRKyQfXwzA4Fuyvg8zWGlTqTwAYp8EoxzdKF-OxIiZI1nuiyfO7O_sfMZ-qZmxCMobHUacsy-1zNo9qm4OuCW-Y_2OAbWaLYryQtgKF6i6FnG5xRTTof4s0ek-hMxhw_CwxfoQRUZt6J9x8War-Sf8M3zkU-yHMkzv2WTsEZk0Y"/>
+</div>
+<!-- Floating Stat -->
+<div class="absolute -bottom-10 -left-10 glass-card p-stack-md hidden md:block border-l-4 border-secondary">
+<p class="font-headline-md text-secondary">99.9%</p>
+<p class="font-label-md text-on-surface">Operational Efficiency</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-primary-container text-center relative overflow-hidden">
+<div class="absolute inset-0 opacity-10 pointer-events-none">
+<div class="h-full w-full bg-[radial-gradient(#dec48e_1px,transparent_1px)] [background-size:40px_40px]"></div>
+</div>
+<div class="relative z-10 max-w-3xl mx-auto space-y-stack-lg">
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Ready to Automate Your Success?</h2>
+<p class="font-body-lg text-on-surface-variant">
+                    Take the first step toward a more efficient future. Let our architects audit your business and reveal the untapped potential within your workflows.
+                </p>
+<div class="flex flex-col sm:flex-row justify-center gap-gutter pt-8">
+<button class="bg-secondary text-primary-container px-10 py-5 rounded-lg font-label-md text-lg hover:bg-secondary-fixed transition-all duration-300 transform hover:scale-105">
+                        Book Your Free Workflow Audit Today
+                    </button>
+<button class="border border-secondary text-secondary px-10 py-5 rounded-lg font-label-md text-lg hover:bg-secondary/10 transition-all duration-300">
+                        View Solutions
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full px-margin-mobile md:px-margin-desktop py-stack-lg flex flex-col md:flex-row justify-between items-center gap-stack-md bg-surface-container-lowest border-t border-secondary/10">
+<div class="flex flex-col items-center md:items-start gap-2">
+<div class="font-headline-md text-headline-md text-secondary">Wasl Agency</div>
+<p class="font-body-md text-body-md text-on-surface-variant opacity-70">© 2024 Wasl Agency. Architectural AI Excellence.</p>
+</div>
+<div class="flex gap-stack-lg">
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-300 font-body-md text-body-md" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-300 font-body-md text-body-md" href="#">Terms of Service</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-300 font-body-md text-body-md" href="#">LinkedIn</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-300 font-body-md text-body-md" href="#">Contact</a>
+</div>
+</footer>
+<script>
+        // Smooth scroll for anchors
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Simple Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100');
+                    entry.target.classList.remove('translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.glass-card').forEach(el => {
+            el.classList.add('opacity-0', 'translate-y-10', 'transition-all', 'duration-700');
+            observer.observe(el);
+        });
+
+        // Interaction for active nav state
+        const navLinks = document.querySelectorAll('nav a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.forEach(l => l.classList.remove('text-secondary', 'border-b', 'border-secondary', 'pb-1'));
+                navLinks.forEach(l => l.classList.add('text-on-surface'));
+                link.classList.add('text-secondary', 'border-b', 'border-secondary', 'pb-1');
+                link.classList.remove('text-on-surface');
+            });
+        });
+    </script>
+<style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</body></html>
