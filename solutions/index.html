@@ -1,0 +1,347 @@
+
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400..700;1,400..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed-variant": "#474742",
+                    "on-secondary": "#3e2e06",
+                    "on-primary-container": "#6f87a8",
+                    "tertiary-fixed": "#e5e2db",
+                    "inverse-on-surface": "#19324a",
+                    "primary": "#b0c8ec",
+                    "on-tertiary-fixed": "#1c1c18",
+                    "surface-bright": "#233b53",
+                    "on-secondary-fixed-variant": "#56441b",
+                    "tertiary-fixed-dim": "#c9c6c0",
+                    "inverse-surface": "#d0e4ff",
+                    "on-secondary-fixed": "#251a00",
+                    "on-primary": "#18314e",
+                    "surface": "#001427",
+                    "on-secondary-container": "#cfb681",
+                    "tertiary-container": "#1d1d19",
+                    "secondary": "#dec48e",
+                    "primary-container": "#011e3a",
+                    "secondary-fixed": "#fbdfa8",
+                    "surface-container-highest": "#1e364f",
+                    "primary-fixed": "#d3e4ff",
+                    "outline-variant": "#43474d",
+                    "surface-variant": "#1e364f",
+                    "on-surface-variant": "#c4c6ce",
+                    "error-container": "#93000a",
+                    "tertiary": "#c9c6c0",
+                    "surface-container-lowest": "#000f1f",
+                    "on-tertiary": "#31312c",
+                    "on-error-container": "#ffdad6",
+                    "on-error": "#690005",
+                    "inverse-primary": "#48607f",
+                    "on-background": "#d0e4ff",
+                    "background": "#001427",
+                    "surface-tint": "#b0c8ec",
+                    "primary-fixed-dim": "#b0c8ec",
+                    "error": "#ffb4ab",
+                    "outline": "#8e9198",
+                    "on-surface": "#d0e4ff",
+                    "on-primary-fixed": "#001c38",
+                    "surface-container": "#052138",
+                    "secondary-container": "#59471d"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "stack-md": "16px",
+                    "stack-lg": "32px",
+                    "margin-desktop": "80px",
+                    "gutter": "24px",
+                    "section-gap": "120px",
+                    "stack-sm": "8px",
+                    "margin-mobile": "24px"
+            },
+            "fontFamily": {
+                    "label-md": ["Manrope"],
+                    "headline-lg": ["Playfair Display"],
+                    "body-lg": ["Manrope"],
+                    "headline-lg-mobile": ["Playfair Display"],
+                    "body-md": ["Manrope"],
+                    "headline-md": ["Playfair Display"],
+                    "headline-display": ["Playfair Display"]
+            },
+            "fontSize": {
+                    "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                    "headline-display": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(26, 51, 75, 0.4);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(222, 196, 142, 0.1);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .glass-card:hover {
+            border-color: rgba(222, 196, 142, 0.6);
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px -20px rgba(0, 0, 0, 0.5);
+        }
+        .structural-line {
+            background: linear-gradient(90deg, transparent, rgba(222, 196, 142, 0.2), transparent);
+            height: 1px;
+            width: 100%;
+        }
+        .gold-glow {
+            text-shadow: 0 0 15px rgba(222, 196, 142, 0.3);
+        }
+        body {
+            background-color: #001427;
+            color: #d0e4ff;
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-secondary/20">
+<div class="max-w-7xl mx-auto px-margin-desktop flex justify-between items-center h-20">
+<div class="font-headline-md text-headline-md font-bold text-secondary tracking-tight">
+                Wasl Agency
+            </div>
+<div class="hidden md:flex items-center space-x-10">
+<a class="text-on-surface-variant font-medium hover:text-secondary transition-colors" href="#">Process</a>
+<a class="text-secondary font-bold border-b-2 border-secondary pb-1" href="#">Solutions</a>
+<a class="text-on-surface-variant font-medium hover:text-secondary transition-colors" href="#">Case Studies</a>
+<a class="text-on-surface-variant font-medium hover:text-secondary transition-colors" href="#">About</a>
+<a class="text-on-surface-variant font-medium hover:text-secondary transition-colors" href="#">Insights</a>
+</div>
+<button class="bg-secondary text-on-secondary px-6 py-3 font-label-md text-label-md uppercase tracking-widest hover:bg-secondary-fixed transition-all duration-300 active:scale-95">
+                Book Strategy Call
+            </button>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center overflow-hidden">
+<!-- Background Image with Gradient Overlay -->
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-30 grayscale brightness-75" data-alt="A low-angle shot of a majestic modern skyscraper featuring complex geometric glass facades and steel framework. The lighting is dramatic, capturing a golden hour glow against deep shadows, creating a sophisticated architectural luxury atmosphere. The color palette is dominated by deep blues and metallic golds, reflecting a sense of structural integrity and intelligent design." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBi05b33yI9r5hNY7tIik9HG2dL4ni1W4bAJqrYdhg561-MS_yg-CcoWfYca5H1GQ7sk77sDNxP2JtAYbbLaMOlNYd3Ct7aedCTEz8NRRS1tJpihzsjmLkPFvgzwZJ5kDiwhxbHpVQ9wjTX9izIBZ0ftSfNOHGtWZhK4MVAN4n0xz08jHm0rZtzIKKAhO8t6cFYaEYKyF414Fg6jHgPPeoVAKpQr4yVXl81sLzhXatx7Dcp5376ZnX_IibOhDobgkRFxUqWxTTt2jI"/>
+<div class="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background"></div>
+</div>
+<div class="max-w-7xl mx-auto px-margin-desktop relative z-10">
+<div class="max-w-3xl">
+<span class="inline-block px-4 py-1 border border-secondary/30 text-secondary font-label-md text-label-md uppercase tracking-[0.2em] mb-stack-md">
+                        Executive Solutions
+                    </span>
+<h1 class="font-headline-display text-headline-display mb-stack-lg leading-tight">
+                        Architecting <br/><span class="text-secondary gold-glow">Intelligent Solutions</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant/90 max-w-xl leading-relaxed">
+                        Bespoke AI frameworks engineered for the high-ticket real estate and enterprise sectors. We translate structural precision into digital sovereignty.
+                    </p>
+<div class="mt-section-gap flex items-center space-x-8">
+<div class="h-[1px] w-24 bg-secondary/40"></div>
+<span class="font-label-md text-label-md uppercase tracking-widest text-secondary/60">Scroll to Explore</span>
+</div>
+</div>
+</div>
+<!-- Decorative subtle grid -->
+<div class="absolute inset-0 pointer-events-none opacity-[0.03]" style="background-image: linear-gradient(#dec48e 1px, transparent 1px), linear-gradient(90deg, #dec48e 1px, transparent 1px); background-size: 80px 80px;"></div>
+</section>
+<!-- Solution Grid Section -->
+<section class="py-section-gap bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto px-margin-desktop">
+<div class="mb-section-gap text-center">
+<h2 class="font-headline-lg text-headline-lg mb-stack-sm">The Strategic Framework</h2>
+<div class="structural-line mx-auto max-w-xs"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Lead Acquisition -->
+<div class="glass-card p-stack-lg group">
+<div class="flex justify-between items-start mb-stack-lg">
+<span class="material-symbols-outlined text-secondary text-5xl" style="font-variation-settings: 'wght' 200;">data_exploration</span>
+<span class="text-secondary/20 font-headline-md italic">01</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-secondary mb-stack-md">Precision Lead Acquisition</h3>
+<p class="text-on-surface-variant font-body-md leading-relaxed">
+                            Advanced web scraping and data mining tailored for high-yield property portfolios. We identify market signals before they become trends, ensuring first-mover advantage in premium markets.
+                        </p>
+</div>
+<!-- Workflow Engineering -->
+<div class="glass-card p-stack-lg group">
+<div class="flex justify-between items-start mb-stack-lg">
+<span class="material-symbols-outlined text-secondary text-5xl" style="font-variation-settings: 'wght' 200;">architecture</span>
+<span class="text-secondary/20 font-headline-md italic">02</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-secondary mb-stack-md">Workflow Engineering</h3>
+<p class="text-on-surface-variant font-body-md leading-relaxed">
+                            Structural automation of complex business processes, reducing overhead while maintaining artisanal quality. Our systems don't just replace tasks; they enhance the human touch where it matters most.
+                        </p>
+</div>
+<!-- Sovereign AI -->
+<div class="glass-card p-stack-lg group">
+<div class="flex justify-between items-start mb-stack-lg">
+<span class="material-symbols-outlined text-secondary text-5xl" style="font-variation-settings: 'wght' 200;">shield_with_heart</span>
+<span class="text-secondary/20 font-headline-md italic">03</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-secondary mb-stack-md">Sovereign AI Networks</h3>
+<p class="text-on-surface-variant font-body-md leading-relaxed">
+                            Custom, private LLM deployments and agentic systems that live within your agency's firewall. Absolute data privacy meet unparalleled cognitive performance for elite consultancy.
+                        </p>
+</div>
+<!-- Intelligence Analytics -->
+<div class="glass-card p-stack-lg group">
+<div class="flex justify-between items-start mb-stack-lg">
+<span class="material-symbols-outlined text-secondary text-5xl" style="font-variation-settings: 'wght' 200;">monitoring</span>
+<span class="text-secondary/20 font-headline-md italic">04</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-secondary mb-stack-md">Intelligence Analytics</h3>
+<p class="text-on-surface-variant font-body-md leading-relaxed">
+                            Real-time dashboarding and predictive modeling for market expansion. Dynamic visualization of complex data assets turned into actionable strategy for investment decision-making.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Feature Spotlight Section -->
+<section class="py-section-gap relative">
+<div class="max-w-7xl mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-section-gap items-center">
+<div class="order-2 lg:order-1">
+<div class="relative group">
+<div class="absolute -inset-4 border border-secondary/20 translate-x-4 translate-y-4 -z-10 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-500"></div>
+<img class="w-full aspect-square object-cover" data-alt="A wide-angle interior view of a high-end, minimalist commercial lobby with marble floors and dark wood paneling. A sleek, transparent digital interface is subtly overlaid on a glass partition, showing data visualizations in a golden hue. The mood is authoritative and serene, representing architectural precision and high-tech integration." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKxbFbVc36Zlasp5zjDrpNggDbLlbtLdV1hlzXC8Qt4mz53cHvghv77A98V2E1SGjtD5BIdjup0VC48ItPLnERwpfVIh-s1yfKsMUfMv-ffY065S6sdzzYSSpezdZbUsYeCWtwIS2EmtVR7sTz0CBbOh3R5s3rp7OUSl6z-_bKcsYdXIE42ZJ5dFuUEgDN-DDVDAtdiw-8XP9wLAgCt0qX_RAENATYLRai2oKeEnJy6uB3M9x70SRzh6Pp-HA639Xqckc6XZB-bTk"/>
+</div>
+</div>
+<div class="order-1 lg:order-2">
+<h2 class="font-headline-lg text-headline-lg mb-stack-lg leading-tight">Why Architectural AI?</h2>
+<ul class="space-y-stack-lg">
+<li class="flex gap-stack-md items-start">
+<span class="material-symbols-outlined text-secondary pt-1">verified_user</span>
+<div>
+<h4 class="font-headline-md text-[24px] text-on-surface mb-2">Data Sovereignty</h4>
+<p class="text-on-surface-variant leading-relaxed">In the realm of high-ticket assets, information is the ultimate currency. Our private infrastructure ensures your proprietary intelligence never leaves your control.</p>
+</div>
+</li>
+<li class="flex gap-stack-md items-start">
+<span class="material-symbols-outlined text-secondary pt-1">precision_manufacturing</span>
+<div>
+<h4 class="font-headline-md text-[24px] text-on-surface mb-2">Zero-Error Precision</h4>
+<p class="text-on-surface-variant leading-relaxed">Engineered with a focus on structural integrity, our AI models are fine-tuned to eliminate hallucinations, providing reliable data for critical decisions.</p>
+</div>
+</li>
+<li class="flex gap-stack-md items-start">
+<span class="material-symbols-outlined text-secondary pt-1">layers</span>
+<div>
+<h4 class="font-headline-md text-[24px] text-on-surface mb-2">Scalable Infrastructure</h4>
+<p class="text-on-surface-variant leading-relaxed">Built to evolve. Our frameworks grow with your agency, from boutique operations to global property portfolios without compromising performance.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA Section -->
+<section class="py-section-gap relative overflow-hidden">
+<div class="absolute inset-0 bg-primary-container z-0 opacity-40"></div>
+<div class="max-w-7xl mx-auto px-margin-desktop relative z-10 text-center">
+<div class="max-w-2xl mx-auto">
+<h2 class="font-headline-lg text-headline-lg mb-stack-lg">Elevate Your Operational Blueprint</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-section-gap">
+                        Partner with Wasl Agency to engineer a future where intelligence is your most enduring asset.
+                    </p>
+<button class="bg-secondary text-on-secondary px-10 py-5 font-label-md text-[16px] uppercase tracking-[0.3em] hover:bg-secondary-fixed transition-all duration-300 shadow-xl shadow-black/20 group">
+                        Book Strategy Call
+                        <span class="material-symbols-outlined ml-2 align-middle inline-block transform transition-transform group-hover:translate-x-1">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Structural background element -->
+<div class="absolute -bottom-24 -right-24 w-96 h-96 border border-secondary/10 rounded-full"></div>
+<div class="absolute top-12 left-12 w-48 h-48 border border-secondary/5"></div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface border-t border-secondary/10">
+<div class="max-w-7xl mx-auto px-margin-desktop py-section-gap flex flex-col md:flex-row justify-between">
+<div class="mb-stack-lg md:mb-0">
+<div class="font-headline-md text-headline-md text-secondary mb-4">Wasl Agency</div>
+<p class="text-on-surface-variant max-w-xs mb-stack-lg">Architecting intelligence for the next generation of global real estate leaders.</p>
+<p class="text-on-surface-variant/60 font-label-md text-label-md">© 2024 Wasl Agency. All rights reserved.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-stack-lg">
+<div class="flex flex-col space-y-3">
+<span class="font-label-md text-secondary uppercase tracking-widest mb-2">Legal</span>
+<a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">Terms of Service</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">Cookie Policy</a>
+</div>
+<div class="flex flex-col space-y-3">
+<span class="font-label-md text-secondary uppercase tracking-widest mb-2">Social</span>
+<a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">LinkedIn</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">Instagram</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">Twitter</a>
+</div>
+<div class="flex flex-col space-y-3">
+<span class="font-label-md text-secondary uppercase tracking-widest mb-2">Contact</span>
+<a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">Email Us</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">Find a Studio</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        // Subtle micro-interaction: Header scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-2xl', 'bg-background');
+            } else {
+                nav.classList.remove('shadow-2xl');
+            }
+        });
+
+        // Entrance animations for grid items
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.glass-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.8s ease-out, transform 0.8s ease-out';
+            observer.observe(card);
+        });
+    </script>
+</body></html>
