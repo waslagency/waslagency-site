@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Wasl Agency | Stop Losing Leads. Automate Your Growth.</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-container": "#59471d",
+                        "on-primary": "#18314e",
+                        "on-tertiary": "#31312c",
+                        "primary-fixed": "#d3e4ff",
+                        "surface-bright": "#233b53",
+                        "on-tertiary-container": "#86857f",
+                        "surface-container-high": "#122c43",
+                        "primary-container": "#011e3a",
+                        "on-secondary-fixed": "#251a00",
+                        "on-secondary-container": "#cfb681",
+                        "secondary": "#dec48e",
+                        "error-container": "#93000a",
+                        "tertiary-container": "#1d1d19",
+                        "on-error": "#690005",
+                        "surface-container-lowest": "#000f1f",
+                        "inverse-primary": "#48607f",
+                        "on-surface-variant": "#c4c6ce",
+                        "outline-variant": "#43474d",
+                        "on-error-container": "#ffdad6",
+                        "on-primary-fixed": "#001c38",
+                        "background": "#011e3a",
+                        "error": "#ffb4ab",
+                        "tertiary-fixed-dim": "#c9c6c0",
+                        "primary": "#b0c8ec",
+                        "surface-dim": "#001427",
+                        "inverse-on-surface": "#19324a",
+                        "surface-variant": "#1e364f",
+                        "tertiary": "#c9c6c0",
+                        "on-primary-container": "#6f87a8",
+                        "outline": "#8e9198",
+                        "secondary-fixed-dim": "#dec48e",
+                        "on-secondary": "#3e2e06",
+                        "surface": "#011e3a",
+                        "on-tertiary-fixed-variant": "#474742",
+                        "surface-tint": "#b0c8ec",
+                        "on-secondary-fixed-variant": "#56441b",
+                        "primary-fixed-dim": "#b0c8ec",
+                        "tertiary-fixed": "#e5e2db",
+                        "surface-container": "#052138",
+                        "on-surface": "#F6F3EC",
+                        "surface-container-highest": "#1e364f",
+                        "on-background": "#F6F3EC",
+                        "surface-container-low": "#011d34",
+                        "inverse-surface": "#d0e4ff",
+                        "on-primary-fixed-variant": "#304866",
+                        "secondary-fixed": "#fbdfa8",
+                        "on-tertiary-fixed": "#1c1c18",
+                        "accent": "#CBB27E",
+                        "on-accent": "#18314e"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Playfair Display", "serif"],
+                        "body": ["Manrope", "sans-serif"],
+                        "label": ["Manrope", "sans-serif"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .glass-card {
+            background: rgba(18, 44, 67, 0.4);
+            backdrop-filter: blur(12px);
+            border-top: 1px solid rgba(203, 178, 126, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #CBB27E 0%, #dec48e 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-accent selection:text-on-accent">
+<!-- Section 1: TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface-container-lowest/80 backdrop-blur-xl border-b border-outline-variant/30">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-headline font-bold tracking-tight text-on-surface">Wasl Agency</div>
+<div class="hidden md:flex space-x-10">
+<a class="text-accent border-b-2 border-accent pb-1 font-label text-sm uppercase tracking-wider transition-colors duration-300" href="#">Our Solutions</a>
+<a class="text-on-surface/70 font-label text-sm uppercase tracking-wider hover:text-accent transition-colors duration-300" href="#">Case Studies</a>
+<a class="text-on-surface/70 font-label text-sm uppercase tracking-wider hover:text-accent transition-colors duration-300" href="#">How it Works</a>
+</div>
+<button class="bg-accent text-on-accent px-6 py-2.5 rounded-lg font-bold text-xs uppercase tracking-widest hover:opacity-90 active:scale-95 transition-all duration-200">
+            Book a Strategy Call
+        </button>
+</div>
+</nav>
+<main>
+<!-- Section 1: Hero -->
+<section class="relative pt-40 pb-24 overflow-hidden min-h-screen flex items-center">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+<div class="lg:col-span-7 z-10">
+<span class="inline-block px-4 py-1.5 rounded-full border border-accent/30 text-[10px] font-label tracking-[0.2em] text-accent mb-8 uppercase bg-accent/5">Future of Lead Gen</span>
+<h1 class="text-5xl md:text-8xl font-headline font-bold text-on-surface leading-[1.1] mb-8">
+                Stop Losing Leads. <br/><span class="text-gradient">Automate Your Growth.</span>
+</h1>
+<p class="text-lg md:text-xl text-on-surface/80 max-w-xl mb-12 leading-relaxed">
+                Wasl Agency builds AI systems that answer leads instantly, qualify prospects, and book appointments automatically—so you never miss a revenue opportunity again.
+            </p>
+<div class="flex flex-col sm:flex-row gap-6">
+<button class="px-10 py-5 bg-accent text-on-accent font-bold rounded-lg hover:shadow-[0_0_30px_rgba(203,178,126,0.2)] transition-all uppercase tracking-widest text-xs">
+                    Book a Free Strategy Call
+                </button>
+<button class="px-10 py-5 border border-outline-variant text-on-surface font-bold rounded-lg hover:bg-surface-container transition-all uppercase tracking-widest text-xs">
+                    See How It Works
+                </button>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="absolute -inset-10 bg-accent/10 blur-[120px] rounded-full"></div>
+<div class="glass-card rounded-xl border border-outline-variant p-2 relative overflow-hidden group">
+<img alt="Workflow Dashboard" class="w-full h-auto rounded-lg grayscale group-hover:grayscale-0 transition-all duration-700 opacity-80 group-hover:opacity-100" data-alt="Modern technical dashboard with neon cyan line charts, data nodes connecting, and sleek digital interface elements on dark glass background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJTqUWOnkUgYxQ3kki_5LRyntsZ7AHpGIcgG8f27_9mbLezxy2i7bsNgKTfEqbFQLRBDTP6WR_eJHxhSkkTF_fgPD4Iw2ItHZuYj8Yrd2vLY-doKXWnFhNddKlU03xv4miYgETwOIN3lbWRl7Hni9hS-HeMJgGClJZUqaetXMJg72wVd4LQrlv8FL5dAcRw2Nt7p7tC3vlXM_Xk1e3X_ML4tBeb0y8mnsQzpFQloB4CTGCz-9z-zyLW6q08mxTXY-ggWCXuW1If_Q"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Trust Strip -->
+<section class="py-16 bg-surface-container-lowest border-y border-outline-variant/20">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-12 items-center">
+<div class="flex flex-col items-center text-center">
+<span class="text-3xl font-headline font-bold text-accent mb-2">98%</span>
+<span class="text-[10px] font-label tracking-[0.2em] text-on-surface/50 uppercase">24/7 Lead Response</span>
+</div>
+<div class="flex flex-col items-center text-center">
+<span class="text-3xl font-headline font-bold text-accent mb-2">12x</span>
+<span class="text-[10px] font-label tracking-[0.2em] text-on-surface/50 uppercase">Faster Follow-up</span>
+</div>
+<div class="flex flex-col items-center text-center">
+<span class="text-3xl font-headline font-bold text-accent mb-2">3.5x</span>
+<span class="text-[10px] font-label tracking-[0.2em] text-on-surface/50 uppercase">More Appointments</span>
+</div>
+<div class="flex flex-col items-center text-center">
+<span class="text-3xl font-headline font-bold text-accent mb-2">0</span>
+<span class="text-[10px] font-label tracking-[0.2em] text-on-surface/50 uppercase">Missed Opportunities</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Problem Section -->
+<section class="py-32 relative">
+<div class="max-w-7xl mx-auto px-8">
+<div class="max-w-3xl mb-20">
+<h2 class="text-4xl md:text-5xl font-headline font-bold mb-8">The Cost of Inaction</h2>
+<p class="text-on-surface/70 text-lg leading-relaxed">Every minute you wait to respond to a lead, your conversion rate drops by 80%. Human teams can't be everywhere at once—and your revenue is leaking.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+<div class="p-10 bg-surface-container-low rounded-xl border border-outline-variant/10 hover:border-accent/30 transition-all group">
+<span class="material-symbols-outlined text-accent/50 group-hover:text-accent mb-6 text-4xl" data-icon="phone_missed">phone_missed</span>
+<h3 class="text-2xl font-headline font-bold mb-4">Missed Calls</h3>
+<p class="text-on-surface/70 leading-relaxed">Potential clients move to competitors if they don't get an answer immediately. You lose the lead before you even know they called.</p>
+</div>
+<div class="p-10 bg-surface-container-low rounded-xl border border-outline-variant/10 hover:border-accent/30 transition-all group">
+<span class="material-symbols-outlined text-accent/50 group-hover:text-accent mb-6 text-4xl" data-icon="timer_off">timer_off</span>
+<h3 class="text-2xl font-headline font-bold mb-4">Slow Follow-up</h3>
+<p class="text-on-surface/70 leading-relaxed">The "speed to lead" is the #1 factor in closing sales. Waiting until the next business day is a death sentence for growth.</p>
+</div>
+<div class="p-10 bg-surface-container-low rounded-xl border border-outline-variant/10 hover:border-accent/30 transition-all group">
+<span class="material-symbols-outlined text-accent/50 group-hover:text-accent mb-6 text-4xl" data-icon="trending_down">trending_down</span>
+<h3 class="text-2xl font-headline font-bold mb-4">Revenue Leakage</h3>
+<p class="text-on-surface/70 leading-relaxed">Unqualified prospects eat up your sales team's expensive time, while high-value leads slip through the cracks of manual CRMs.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Solution Section -->
+<section class="py-32 bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center mb-20">
+<h2 class="text-4xl md:text-5xl font-headline font-bold mb-6">The AI Automation Suite</h2>
+<p class="text-on-surface/70 max-w-2xl mx-auto">We don't just provide tools; we build the architectural spine of your sales department.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="glass-card p-8 rounded-xl hover:shadow-[0_10px_30px_rgba(203,178,126,0.1)] transition-all">
+<span class="material-symbols-outlined text-accent mb-6 text-3xl" data-icon="record_voice_over">record_voice_over</span>
+<h4 class="font-headline font-bold text-xl mb-4">AI Voice Assistants</h4>
+<p class="text-sm text-on-surface/70 leading-relaxed">Hyper-realistic AI that answers phones, schedules bookings, and answers FAQs 24/7.</p>
+</div>
+<div class="glass-card p-8 rounded-xl hover:shadow-[0_10px_30px_rgba(203,178,126,0.1)] transition-all">
+<span class="material-symbols-outlined text-accent mb-6 text-3xl" data-icon="chat_bubble">chat_bubble</span>
+<h4 class="font-headline font-bold text-xl mb-4">AI Web Chat</h4>
+<p class="text-sm text-on-surface/70 leading-relaxed">Intelligent conversational agents that convert website traffic into qualified meetings.</p>
+</div>
+<div class="glass-card p-8 rounded-xl hover:shadow-[0_10px_30px_rgba(203,178,126,0.1)] transition-all">
+<span class="material-symbols-outlined text-accent mb-6 text-3xl" data-icon="hub">hub</span>
+<h4 class="font-headline font-bold text-xl mb-4">CRM Automation</h4>
+<p class="text-sm text-on-surface/70 leading-relaxed">Sync data across platforms automatically, ensuring every lead is tracked and nurtured.</p>
+</div>
+<div class="glass-card p-8 rounded-xl hover:shadow-[0_10px_30px_rgba(203,178,126,0.1)] transition-all">
+<span class="material-symbols-outlined text-accent mb-6 text-3xl" data-icon="campaign">campaign</span>
+<h4 class="font-headline font-bold text-xl mb-4">Omnichannel Flow</h4>
+<p class="text-sm text-on-surface/70 leading-relaxed">Coordinated SMS and Email workflows that follow up until the prospect is ready to buy.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: How It Works -->
+<section class="py-32">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-20 items-center">
+<div class="lg:col-span-4">
+<h2 class="text-4xl font-headline font-bold mb-8">Engineered for Success</h2>
+<p class="text-on-surface/70 mb-10 leading-relaxed">Our implementation process is designed to be low-friction for your team while delivering high-impact results.</p>
+</div>
+<div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="relative pl-16">
+<div class="absolute left-0 top-0 w-10 h-10 flex items-center justify-center rounded bg-accent text-on-accent font-headline font-bold text-lg">1</div>
+<h4 class="font-headline font-bold text-xl mb-3">Deep Audit</h4>
+<p class="text-sm text-on-surface/70 leading-relaxed">We map your current lead flow and identify exactly where the revenue is leaking.</p>
+</div>
+<div class="relative pl-16">
+<div class="absolute left-0 top-0 w-10 h-10 flex items-center justify-center rounded bg-accent text-on-accent font-headline font-bold text-lg">2</div>
+<h4 class="font-headline font-bold text-xl mb-3">System Build</h4>
+<p class="text-sm text-on-surface/70 leading-relaxed">We engineer custom AI models trained on your business data and sales protocols.</p>
+</div>
+<div class="relative pl-16">
+<div class="absolute left-0 top-0 w-10 h-10 flex items-center justify-center rounded bg-accent text-on-accent font-headline font-bold text-lg">3</div>
+<h4 class="font-headline font-bold text-xl mb-3">Agile Launch</h4>
+<p class="text-sm text-on-surface/70 leading-relaxed">Seamless integration with your existing CRM and phone systems with zero downtime.</p>
+</div>
+<div class="relative pl-16">
+<div class="absolute left-0 top-0 w-10 h-10 flex items-center justify-center rounded bg-accent text-on-accent font-headline font-bold text-lg">4</div>
+<h4 class="font-headline font-bold text-xl mb-3">Continuous ROI</h4>
+<p class="text-sm text-on-surface/70 leading-relaxed">Proactive monitoring and optimization to ensure the AI gets smarter every day.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 6: Industry Focus -->
+<section class="py-32 bg-surface-container">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row gap-20 items-center">
+<div class="md:w-1/2">
+<div class="p-2 rounded-xl bg-surface-container-lowest border border-outline-variant/20 inline-block shadow-2xl">
+<img alt="Real Estate Industry" class="w-full h-80 object-cover rounded-lg opacity-90" data-alt="Luxury modern real estate architectural detail with floor to ceiling glass windows and evening sky reflection" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAe_TKjoXrnrjvN-u-14dAhcKImHoHL-dycJDKgdm7-kEi9zJNeMLu6wM5K3yfY9YpSMCO8soZjvMliU4nUJCNjr8FT7aa2LW-BTVwzwtEV92rBiE8Lb4lzDUxc-_9fYh0wg-UVSczLl8DtnZBljOBfNBYyjvQbAmVsNMCsPkin8gmhik_IrcxKnKj4ccoJrPAHzickinn3kNO6TQFkI2GwfWOUI_d22tXH_D-VaxT2g_w4fnNxcUDD2jffV6itLkgiV79nC1kJsrc"/>
+</div>
+</div>
+<div class="md:w-1/2">
+<h2 class="text-4xl md:text-5xl font-headline font-bold mb-8">Real Estate &amp; Beyond</h2>
+<p class="text-lg text-on-surface/70 mb-8 leading-relaxed">In high-ticket industries like Real Estate, one missed call can cost thousands. Our AI instantly handles inquiries from Zillow, Realtor.com, and Facebook, qualifying buyers before they ever talk to an agent.</p>
+<ul class="space-y-6">
+<li class="flex items-center gap-4">
+<span class="material-symbols-outlined text-accent" data-icon="check_circle">check_circle</span>
+<span class="text-on-surface/90 font-medium">Instant inquiry response 24/7/365</span>
+</li>
+<li class="flex items-center gap-4">
+<span class="material-symbols-outlined text-accent" data-icon="check_circle">check_circle</span>
+<span class="text-on-surface/90 font-medium">Automated pre-qualification scripts</span>
+</li>
+<li class="flex items-center gap-4">
+<span class="material-symbols-outlined text-accent" data-icon="check_circle">check_circle</span>
+<span class="text-on-surface/90 font-medium">Direct calendar booking for showings</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 7: Results/Benefits -->
+<section class="py-32">
+<div class="max-w-7xl mx-auto px-8 text-center">
+<h2 class="text-4xl font-headline font-bold mb-20">Outcome-Driven ROI</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-20">
+<div>
+<div class="text-6xl font-headline font-bold text-accent mb-4">95%</div>
+<p class="text-on-surface/50 font-label tracking-[0.2em] uppercase text-[10px]">Reduction in Response Time</p>
+</div>
+<div>
+<div class="text-6xl font-headline font-bold text-accent mb-4">40%</div>
+<p class="text-on-surface/50 font-label tracking-[0.2em] uppercase text-[10px]">Higher Team Efficiency</p>
+</div>
+<div>
+<div class="text-6xl font-headline font-bold text-accent mb-4">2.5x</div>
+<p class="text-on-surface/50 font-label tracking-[0.2em] uppercase text-[10px]">Avg. Increase in Net Profit</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 8: Featured Service -->
+<section class="py-32 bg-surface-container-lowest relative overflow-hidden">
+<div class="absolute top-0 right-0 w-1/2 h-full bg-accent/5 blur-[120px] -z-10"></div>
+<div class="max-w-7xl mx-auto px-8">
+<div class="glass-card p-16 rounded-2xl border border-accent/20 flex flex-col md:flex-row gap-16 items-center">
+<div class="md:w-3/5">
+<span class="text-accent text-[10px] font-label tracking-[0.3em] uppercase mb-6 block">Core Infrastructure</span>
+<h2 class="text-4xl font-headline font-bold mb-8">AI Lead Capture &amp; Appointment System</h2>
+<p class="text-on-surface/70 text-lg mb-10 leading-relaxed">Our flagship "Autopilot" engine. It doesn't just collect leads—it closes the gap between curiosity and commitment. Integrated with GoHighLevel, HubSpot, or Salesforce, it manages the entire pre-sales journey autonomously.</p>
+<button class="bg-accent text-on-accent font-bold px-10 py-5 rounded-lg hover:opacity-90 transition-all uppercase tracking-widest text-xs">Get the Full Feature Breakdown</button>
+</div>
+<div class="md:w-2/5 w-full">
+<div class="bg-surface-container p-8 rounded-xl space-y-6 shadow-inner">
+<div class="flex justify-between items-center border-b border-outline-variant/20 pb-4">
+<span class="text-sm font-label text-on-surface/60">Lead Identified</span>
+<span class="text-accent text-xs font-bold">0s</span>
+</div>
+<div class="flex justify-between items-center border-b border-outline-variant/20 pb-4">
+<span class="text-sm font-label text-on-surface/60">SMS/Voice Outreach</span>
+<span class="text-accent text-xs font-bold">+15s</span>
+</div>
+<div class="flex justify-between items-center border-b border-outline-variant/20 pb-4">
+<span class="text-sm font-label text-on-surface/60">Pre-Qualification</span>
+<span class="text-accent text-xs font-bold">+3m</span>
+</div>
+<div class="flex justify-between items-center text-accent font-bold pt-2">
+<span class="text-sm font-label">Meeting Confirmed</span>
+<span class="text-xs tracking-[0.2em]">SUCCESS</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 9: Case Study -->
+<section class="py-32">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
+<div>
+<h2 class="text-4xl font-headline font-bold mb-6">Case Study: Vanguard Realty</h2>
+<p class="text-on-surface/70 mb-10 text-lg leading-relaxed">Vanguard was losing 30% of their weekend leads due to slow agent response times. We deployed a custom Voice AI to handle after-hours calls.</p>
+<div class="grid grid-cols-2 gap-6">
+<div class="p-6 bg-surface-container-low rounded-xl border border-outline-variant/10">
+<span class="block text-error text-xs font-label tracking-widest uppercase mb-2">Before</span>
+<span class="text-xl font-headline font-bold">14hr Response</span>
+</div>
+<div class="p-6 bg-surface-container-low rounded-xl border-l-4 border-accent">
+<span class="block text-accent text-xs font-label tracking-widest uppercase mb-2">After</span>
+<span class="text-xl font-headline font-bold">12s Response</span>
+</div>
+</div>
+</div>
+<div class="relative group">
+<div class="absolute -inset-4 bg-accent/5 blur-2xl rounded-2xl"></div>
+<img alt="Results Graph" class="rounded-xl shadow-2xl relative z-10 opacity-90 grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="Modern minimalist office space with multiple screens showing complex business growth analytics and rising green bar charts" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDx2w-uPY9voQkhvluCuEm2Aeh29XiNRZa2mJ4MZfZ-Jo2cWomQbXDeh_d-9a-t0uMK2IlkWp1z6FAbrFN6UXuBP0YIOZRTNMIu-CK6eVe71qz42d4Hu5PXjMMt9EesoucuMVqGcrEgpGVOuX6PJTjH4vzrcd9brmpqF4E2oV0fIxlMA23mBQ4_tgDkdfoP3M3o4JjMQVRokT7jqpneb0KFn2XbfwBZPpeFV8xDj9zzYO2GYyDWirfd0L46Z1C-Kk9U57ZfADcLBdo"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 10: FAQ -->
+<section class="py-32 bg-surface-container-low">
+<div class="max-w-4xl mx-auto px-8">
+<h2 class="text-4xl font-headline font-bold mb-16 text-center">Frequently Asked Questions</h2>
+<div class="space-y-6">
+<div class="bg-surface-container p-8 rounded-xl border border-outline-variant/10 group cursor-pointer">
+<div class="flex justify-between items-center">
+<h4 class="font-headline font-bold text-xl group-hover:text-accent transition-colors">Does the AI sound robotic?</h4>
+<span class="material-symbols-outlined text-accent" data-icon="add">add</span>
+</div>
+<p class="mt-6 text-sm text-on-surface/70 leading-relaxed">Not at all. We use the latest low-latency neural text-to-speech models that include natural breathing, pauses, and localized accents. Most prospects cannot tell the difference.</p>
+</div>
+<div class="bg-surface-container p-8 rounded-xl border border-outline-variant/10 group cursor-pointer">
+<div class="flex justify-between items-center">
+<h4 class="font-headline font-bold text-xl group-hover:text-accent transition-colors">How long does implementation take?</h4>
+<span class="material-symbols-outlined text-accent" data-icon="add">add</span>
+</div>
+<p class="mt-6 text-sm text-on-surface/70 leading-relaxed">A standard "Lead-to-Booking" system takes 14-21 days from initial audit to full launch.</p>
+</div>
+<div class="bg-surface-container p-8 rounded-xl border border-outline-variant/10 group cursor-pointer">
+<div class="flex justify-between items-center">
+<h4 class="font-headline font-bold text-xl group-hover:text-accent transition-colors">Will it work with my current CRM?</h4>
+<span class="material-symbols-outlined text-accent" data-icon="add">add</span>
+</div>
+<p class="mt-6 text-sm text-on-surface/70 leading-relaxed">Yes. We specialize in custom API integrations and use robust middleware to sync with GoHighLevel, HubSpot, Salesforce, and 3000+ other apps via Zapier/Make.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 11: Final CTA -->
+<section class="py-40 relative overflow-hidden bg-surface-container-lowest">
+<div class="max-w-5xl mx-auto px-8 text-center relative z-10">
+<h2 class="text-4xl md:text-7xl font-headline font-bold mb-10 leading-tight">
+            Your Business Shouldn’t Lose Revenue Because <span class="text-gradient">Humans Can’t Reply Fast Enough.</span>
+</h2>
+<p class="text-xl text-on-surface/70 mb-16 max-w-2xl mx-auto leading-relaxed">Take the first step toward a 24/7 autonomous sales engine. Get your free custom automation audit today.</p>
+<button class="px-12 py-6 bg-accent text-on-accent font-bold text-sm uppercase tracking-[0.2em] rounded-lg shadow-2xl hover:scale-105 transition-all">
+            Book Your Free Strategy Call
+        </button>
+</div>
+<div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(203,178,126,0.08)_0%,transparent_70%)]"></div>
+</section>
+</main>
+<!-- Section 12: Footer -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant/20 py-20 px-8 font-body">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-16 items-start">
+<div>
+<div class="text-2xl font-headline font-bold text-on-surface mb-6">Wasl Agency</div>
+<p class="text-on-surface/50 leading-relaxed max-w-xs text-sm">Building the architectural spine for high-performance sales teams through elite AI automation.</p>
+</div>
+<div class="flex flex-col space-y-4">
+<h5 class="text-accent text-[10px] font-label tracking-widest uppercase mb-4">Company</h5>
+<a class="text-on-surface/50 hover:text-accent text-sm transition-all" href="#">Privacy Policy</a>
+<a class="text-on-surface/50 hover:text-accent text-sm transition-all" href="#">Terms of Service</a>
+<a class="text-on-surface/50 hover:text-accent text-sm transition-all" href="#">LinkedIn</a>
+<a class="text-on-surface/50 hover:text-accent text-sm transition-all" href="#">Twitter</a>
+</div>
+<div class="flex flex-col items-start md:items-end">
+<h5 class="text-on-surface font-headline font-bold text-lg mb-6">Ready to Scale?</h5>
+<button class="px-8 py-4 border border-accent/40 text-accent rounded-lg hover:bg-accent hover:text-on-accent transition-all text-xs font-bold uppercase tracking-widest">Contact Specialist</button>
+<div class="mt-12 text-on-surface/30 text-[10px] tracking-widest uppercase">
+                © 2024 Wasl Agency. All rights reserved.
+            </div>
+</div>
+</div>
+</footer>
+</body></html>
