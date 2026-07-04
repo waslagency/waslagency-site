@@ -1,0 +1,324 @@
+
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Wasl Agency | Architecting the Future</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "primary-fixed": "#d3e4ff",
+                "primary-container": "#011e3a",
+                "tertiary-fixed": "#e5e2db",
+                "on-primary-fixed": "#001c38",
+                "outline": "#8e9198",
+                "on-tertiary-container": "#86857f",
+                "on-background": "#d0e4ff",
+                "on-primary-fixed-variant": "#304866",
+                "error-container": "#93000a",
+                "tertiary": "#c9c6c0",
+                "on-primary-container": "#6f87a8",
+                "inverse-primary": "#48607f",
+                "on-primary": "#18314e",
+                "surface-tint": "#b0c8ec",
+                "background": "#001427",
+                "secondary": "#dec48e",
+                "surface-variant": "#1e364f",
+                "surface-container": "#052138",
+                "on-surface": "#d0e4ff",
+                "surface-container-high": "#122c43",
+                "surface-bright": "#233b53",
+                "surface-container-low": "#011d34",
+                "inverse-on-surface": "#19324a",
+                "outline-variant": "#43474d",
+                "on-error-container": "#ffdad6",
+                "tertiary-container": "#1d1d19",
+                "surface-container-highest": "#1e364f",
+                "primary-fixed-dim": "#b0c8ec",
+                "error": "#ffb4ab",
+                "on-error": "#690005",
+                "tertiary-fixed-dim": "#c9c6c0",
+                "primary": "#b0c8ec",
+                "secondary-container": "#59471d",
+                "on-tertiary-fixed": "#1c1c18",
+                "on-tertiary-fixed-variant": "#474742",
+                "on-tertiary": "#31312c",
+                "on-secondary": "#3e2e06",
+                "surface-dim": "#001427",
+                "secondary-fixed": "#fbdfa8",
+                "on-secondary-container": "#cfb681",
+                "on-secondary-fixed-variant": "#56441b",
+                "on-secondary-fixed": "#251a00",
+                "surface-container-lowest": "#000f1f",
+                "on-surface-variant": "#c4c6ce",
+                "inverse-surface": "#d0e4ff",
+                "surface": "#001427",
+                "secondary-fixed-dim": "#dec48e"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem"
+            },
+            "spacing": {
+                "section-gap": "120px",
+                "margin-mobile": "24px",
+                "stack-sm": "8px",
+                "stack-md": "16px",
+                "gutter": "24px",
+                "stack-lg": "32px",
+                "margin-desktop": "80px"
+            },
+            "fontFamily": {
+                "headline-lg": ["Playfair Display"],
+                "headline-lg-mobile": ["Playfair Display"],
+                "body-lg": ["Manrope"],
+                "body-md": ["Manrope"],
+                "headline-md": ["Playfair Display"],
+                "headline-display": ["Playfair Display"],
+                "label-md": ["Manrope"]
+            },
+            "fontSize": {
+                "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                "headline-display": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .architectural-grid {
+            background-image: linear-gradient(to right, rgba(222, 196, 142, 0.05) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(222, 196, 142, 0.05) 1px, transparent 1px);
+            background-size: 80px 80px;
+        }
+        .text-stroke-gold {
+            -webkit-text-stroke: 1px rgba(222, 196, 142, 0.3);
+            color: transparent;
+        }
+        ::-webkit-scrollbar { width: 4px; }
+        ::-webkit-scrollbar-track { background: #000f1f; }
+        ::-webkit-scrollbar-thumb { background: #dec48e; }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md overflow-x-hidden selection:bg-secondary selection:text-on-secondary">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 bg-surface/80 backdrop-blur-xl border-b border-secondary/10">
+<div class="font-headline-md text-headline-md text-secondary tracking-tight">Wasl Agency</div>
+<div class="hidden md:flex gap-10">
+<a class="font-headline-md text-[18px] text-on-surface hover:text-secondary-fixed-dim transition-colors duration-300" href="#">Process</a>
+<a class="font-headline-md text-[18px] text-on-surface hover:text-secondary-fixed-dim transition-colors duration-300" href="#">Solutions</a>
+<a class="font-headline-md text-[18px] text-on-surface hover:text-secondary-fixed-dim transition-colors duration-300" href="#">Case Studies</a>
+<a class="font-headline-md text-[18px] text-secondary border-b border-secondary pb-1" href="#">About</a>
+<a class="font-headline-md text-[18px] text-on-surface hover:text-secondary-fixed-dim transition-colors duration-300" href="#">Insights</a>
+</div>
+<button class="bg-secondary text-on-secondary px-8 py-3 font-label-md uppercase tracking-widest hover:bg-secondary-fixed transition-all duration-300">
+            Book Strategy Call
+        </button>
+</nav>
+<main class="relative">
+<!-- Hero: The Visionary Foundation -->
+<section class="min-h-screen flex flex-col justify-center architectural-grid pt-20 px-margin-mobile md:px-margin-desktop relative overflow-hidden">
+<div class="max-w-4xl z-10">
+<span class="font-label-md text-secondary tracking-[0.3em] uppercase block mb-stack-md opacity-80">The Visionary Foundation</span>
+<h1 class="font-headline-display text-headline-display text-on-surface mb-stack-lg leading-none">
+                    Architecting the Future of <span class="text-secondary italic font-light">Enterprise Efficiency</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl border-l border-secondary/30 pl-stack-lg">
+                    Wasl Agency bridges traditional business excellence with high-tier AI intelligence. We don't just automate; we engineer sovereign frameworks that scale beyond human limitation while maintaining absolute precision.
+                </p>
+</div>
+<div class="absolute bottom-10 right-margin-desktop hidden lg:block animate-pulse">
+<span class="material-symbols-outlined text-secondary text-5xl font-thin">expand_more</span>
+</div>
+<!-- Visual Accent -->
+<div class="absolute -right-20 top-1/4 w-[500px] h-[500px] border border-secondary/10 rounded-full flex items-center justify-center pointer-events-none">
+<div class="w-[350px] h-[350px] border border-secondary/20 rounded-full opacity-50"></div>
+<div class="w-[200px] h-[200px] border border-secondary/40 rounded-full opacity-20"></div>
+</div>
+</section>
+<!-- Our Identity: The Digital Architects -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container-low border-y border-secondary/5">
+<div class="grid md:grid-cols-2 gap-gutter items-center">
+<div class="order-2 md:order-1">
+<div class="relative group">
+<img class="w-full aspect-[4/5] object-cover filter grayscale hover:grayscale-0 transition-all duration-700" data-alt="A sophisticated low-angle shot of a modern glass and steel skyscraper reaching into a deep navy twilight sky. The architecture is sharp and angular, illuminated by warm interior lights that create a golden glow against the dark structural beams. The aesthetic is clean, professional, and reflects high-end corporate luxury with a focus on geometric precision." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBon-cMjjtG2uM6ip3YExe2At2-4C0zR3tQG0pVS5uKqPDPoMcKQUC2tLtGh48OdRZMmJfYJeZwN4ydbGJ-A5MigHPWKs0mzJ3UKVVV_1Zz3HrjN6Rkfh2CElIKGQyFrhhE_ZfW7qD8nDS3w8C4vd3wL8jJkWwTTaR28fFqxwcgol_hNSSkNQmbzkuy7i8z2BaPAKBcCMVWJZiDqU_mnmTD9XlEr6sD28sJgQ7TbYEWGCzz_pijCWFraE8Q8_x_avCmuTRvEPNf8rg"/>
+<div class="absolute inset-0 border border-secondary/20 -translate-x-4 -translate-y-4 -z-10 group-hover:translate-x-0 group-hover:translate-y-0 transition-transform duration-500"></div>
+</div>
+</div>
+<div class="order-1 md:order-2 md:pl-margin-desktop">
+<span class="font-label-md text-secondary tracking-[0.2em] uppercase block mb-stack-md">Our Identity</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-stack-lg">The Digital <br/><span class="text-stroke-gold">Architects</span></h2>
+<div class="space-y-stack-md text-on-surface-variant font-body-md">
+<p>At Wasl, we view business workflows as living structures. Like the great cathedrals or the modern skyscrapers, efficiency requires more than a facade; it requires structural integrity and mathematical harmony.</p>
+<p>We approach AI integration as a structural engineer approaches a blueprint. Every node, every prompt, and every automation is designed to support the immense weight of global scale operations without sacrificing the artisan's touch.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Core Values: Precision, Sovereignty, and Scale -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop">
+<div class="text-center mb-stack-lg">
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Built on Pillars of <span class="italic">Excellence</span></h2>
+</div>
+<div class="grid md:grid-cols-3 gap-gutter mt-stack-lg">
+<!-- Precision -->
+<div class="p-stack-lg bg-surface-container border border-secondary/10 hover:border-secondary/40 transition-all duration-500 group">
+<div class="mb-stack-lg text-secondary opacity-50 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-4xl" data-weight="fill">architecture</span>
+</div>
+<h3 class="font-headline-md text-[24px] text-on-surface mb-stack-sm">Precision</h3>
+<p class="text-on-surface-variant font-body-md">In the high-ticket B2B sector, errors are costly. We design with a 0.01% margin, ensuring every output meets the rigorous standards of your brand's heritage.</p>
+</div>
+<!-- Sovereignty -->
+<div class="p-stack-lg bg-surface-container border border-secondary/10 hover:border-secondary/40 transition-all duration-500 group">
+<div class="mb-stack-lg text-secondary opacity-50 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-4xl" data-weight="fill">verified_user</span>
+</div>
+<h3 class="font-headline-md text-[24px] text-on-surface mb-stack-sm">Sovereignty</h3>
+<p class="text-on-surface-variant font-body-md">We empower agencies and firms to own their intelligence. Our frameworks are private, secure, and uniquely tuned to your proprietary business logic.</p>
+</div>
+<!-- Scale -->
+<div class="p-stack-lg bg-surface-container border border-secondary/10 hover:border-secondary/40 transition-all duration-500 group">
+<div class="mb-stack-lg text-secondary opacity-50 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-4xl" data-weight="fill">auto_graph</span>
+</div>
+<h3 class="font-headline-md text-[24px] text-on-surface mb-stack-sm">Scale</h3>
+<p class="text-on-surface-variant font-body-md">Architectural AI allows for vertical growth without the horizontal overhead. We build systems that thrive under the pressure of rapid global expansion.</p>
+</div>
+</div>
+</section>
+<!-- Leadership: The Founding Vision -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container-lowest">
+<div class="flex flex-col md:flex-row gap-gutter">
+<div class="w-full md:w-1/3">
+<span class="font-label-md text-secondary tracking-[0.2em] uppercase block mb-stack-md">Leadership</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-stack-lg">The Founding <br/>Vision</h2>
+<blockquote class="font-headline-md text-[20px] text-on-surface-variant italic border-l-2 border-secondary pl-stack-md py-4">
+                        "The intersection of heritage and artificial intelligence is where the next century's dynasties will be built."
+                    </blockquote>
+</div>
+<div class="w-full md:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-gutter">
+<!-- Founder 1 -->
+<div class="relative group overflow-hidden">
+<img class="w-full aspect-square object-cover grayscale brightness-75 group-hover:brightness-100 group-hover:grayscale-0 transition-all duration-700" data-alt="A professional headshot of a mature male executive with a focused expression. He is wearing a tailored deep navy suit in a dimly lit, high-end architectural studio. The background features blurred wooden paneling and gold structural accents. The lighting is dramatic and moody, highlighting the textures and conveying a sense of authoritative leadership and quiet confidence." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2_ZqPPk1fQfD597M5RAflQFlIjhVSlcalvMMSD20iv7M3F1_NiXphZ1z9sbS-a31FGuGYu0Ys3B4ZQO5XGx2ZUxWBCSpSLaQR1Wq_w8t4eHoW2YUHJoxmZOvRO73z9JA662WmoZxxpJ2PZJRFY2L44HyjSs69Ym-aDNqgdQpguo6pzQQUpkfHF3bNpvcx7DDT-pMe3SrUnJ18yBelMBsp-RjCXR-smHDqVO7IeRj39NR47eCxAFpQkcJfSy40NMWHzCNeWcmGXEE"/>
+<div class="absolute bottom-0 left-0 w-full p-stack-md bg-gradient-to-t from-background to-transparent">
+<h4 class="font-headline-md text-[24px] text-on-surface">Omar El-Wasl</h4>
+<p class="text-secondary font-label-md uppercase tracking-widest text-[12px]">Managing Director</p>
+</div>
+</div>
+<!-- Founder 2 -->
+<div class="relative group overflow-hidden">
+<img class="w-full aspect-square object-cover grayscale brightness-75 group-hover:brightness-100 group-hover:grayscale-0 transition-all duration-700" data-alt="A high-end professional portrait of a female partner in a prestigious agency. She is posed against a backdrop of a modern architectural library with minimal decor. Her expression is serene and professional, wearing a sophisticated cream-colored blazer. The color palette is restricted to deep navy, muted gold, and ivory whites, creating an atmosphere of intellectual luxury." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzkYjn7_YjoEYTsVrxBeQWzVTn24nAKZeTsfsON74GqQFZOP9pAzkJAF3W6mpNgbsDa-myMQ6-3b_SvCRz99sjSAmhFb5Ikv0yFTu-_fgPwpsKNh8jxGefObmXuoX5NjaSAGkUS9EuAlTlEhp-YSwQrquChoVyO9L4-hUyOYDESLaPvPyAyo6QCzj7qXxCYjiLkLQzACp3lsdqIKqpp0bGSxIL9b0rZlp24ymiQgsGSyzAq9rccumjPmPfFmA8CKOdkN8zHTebqTE"/>
+<div class="absolute bottom-0 left-0 w-full p-stack-md bg-gradient-to-t from-background to-transparent">
+<h4 class="font-headline-md text-[24px] text-on-surface">Layla Rahman</h4>
+<p class="text-secondary font-label-md uppercase tracking-widest text-[12px]">Chief Intelligence Officer</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Reach: Data Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop architectural-grid">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-gutter text-center">
+<div>
+<div class="font-headline-display text-[48px] text-secondary mb-stack-sm">12+</div>
+<div class="font-label-md text-on-surface-variant uppercase tracking-widest">Global Hubs</div>
+</div>
+<div>
+<div class="font-headline-display text-[48px] text-secondary mb-stack-sm">450M</div>
+<div class="font-label-md text-on-surface-variant uppercase tracking-widest">AUM Optimized</div>
+</div>
+<div>
+<div class="font-headline-display text-[48px] text-secondary mb-stack-sm">100%</div>
+<div class="font-label-md text-on-surface-variant uppercase tracking-widest">Sovereign Data</div>
+</div>
+<div>
+<div class="font-headline-display text-[48px] text-secondary mb-stack-sm">24/7</div>
+<div class="font-label-md text-on-surface-variant uppercase tracking-widest">AI Intelligence</div>
+</div>
+</div>
+</section>
+<!-- Closing CTA: Join the Vanguard -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop mb-stack-lg">
+<div class="bg-surface-container p-margin-mobile md:p-margin-desktop flex flex-col md:flex-row justify-between items-center gap-stack-lg border border-secondary/20 relative overflow-hidden group">
+<!-- Background Decoration -->
+<div class="absolute top-0 right-0 w-1/2 h-full bg-secondary/5 -skew-x-12 translate-x-1/2"></div>
+<div class="z-10 text-center md:text-left">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-stack-md">Join the <span class="italic">Vanguard</span></h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                        Experience the shift from automation to architectural intelligence. Let's discuss how Wasl Agency can re-engineer your efficiency.
+                    </p>
+</div>
+<div class="z-10">
+<button class="bg-secondary text-on-secondary px-12 py-5 font-label-md uppercase tracking-[0.3em] hover:bg-secondary-fixed hover:scale-105 transition-all duration-500 shadow-xl shadow-background/50">
+                        Partner With Us
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full px-margin-mobile md:px-margin-desktop py-stack-lg flex flex-col md:flex-row justify-between items-center gap-stack-md border-t border-secondary/10 bg-surface-container-lowest">
+<div class="font-headline-md text-headline-md text-secondary">Wasl Agency</div>
+<div class="text-on-surface-variant font-body-md text-body-md flex gap-8">
+<a class="hover:text-secondary transition-colors duration-300" href="#">Privacy Policy</a>
+<a class="hover:text-secondary transition-colors duration-300" href="#">Terms of Service</a>
+<a class="hover:text-secondary transition-colors duration-300" href="#">LinkedIn</a>
+<a class="hover:text-secondary transition-colors duration-300" href="#">Contact</a>
+</div>
+<div class="text-on-surface-variant font-body-md text-body-md opacity-60">
+            © 2024 Wasl Agency. Architectural AI Excellence.
+        </div>
+</footer>
+<script>
+        // Subtle Parallax & Intersection Observer for reveal effects
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+
+        // Horizontal scroll progress indicator
+        const progressBar = document.createElement('div');
+        progressBar.className = 'fixed top-0 left-0 h-0.5 bg-secondary z-[60] transition-all duration-100';
+        progressBar.style.width = '0%';
+        document.body.appendChild(progressBar);
+
+        window.addEventListener('scroll', () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            progressBar.style.width = scrolled + "%";
+        });
+    </script>
+</body></html>
